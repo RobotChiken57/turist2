@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..css/main.css">
+    <link rel="stylesheet" href="..css/search.css">
+</head>
+<body>
+    <header class="header">
+        <img src="..img/logo.svg">
+        <nav class="navigation">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html">Главная</a></li>
+                <li class="nav-item"><a href="seat.html">Выбор зон</a></li>
+                <li class="nav-item"><a href="booking.html">Управление бронированием</a></li>
+                <li class="nav-item"><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <label for="site-search">Поиск по сайту:</label>
+            <input type="search" id="site-search" name="q" aria-label="Search through site content">
+            <button>Поиск</button>
+        </div>
+    </header>
+    <div class="results">
+        <div class="region">
+            <p>Регион</p>
+            <select>
+                <option>Сиродил</option>
+                <option>Моровинд</option>
+                <option>Скайрим</option>
+                <option>Хаммерфелл</option>
+            </select>
+        </div>
+        <div class="namem">
+            <p>Название маршрута</p>
+            <select>
+                <option>Туда и обратно</option>
+                <option>Из Скайрима с любовью</option>
+                <option>Свободное королевство Хаммерфелл</option>
+            </select>
+        </div>
+        <div class="dif">
+            <p>Сложность маршрута</p>
+            <select>
+                <option value="1">Для всех</option>
+                <option value="2">Легкий</option>
+                <option value="3">Средняя сложность</option>
+                <option value="4">Сложный</option>
+                <option value="5">Очень сложный(требуется специальная подготовка)</option>
+            </select>
+        </div>
+        <div class="datet">
+            <p>Предполагаемая дата</p>
+            <input type="date" id="hikesearch-date-from" class="styled hasDatepicker">
+        </div>
+        <div class="numbert">
+            <p>Количество интересных зон</p>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </div>
+    </div>
+    <footer>
+        <p class="tel">8 (800) 555-33-10</p>
+        <nav class="basement">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="seat.html">Выбор зон</a></li>
+                <li><a href="booking.html">Управление бронированием</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

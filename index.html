@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..css/main.css">
+</head>
+<body>
+    <header class="header">
+        <img src="..img/logo.svg">
+        <nav class="navigation">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html">Главная</a></li>
+                <li class="nav-item"><a href="seat.html">Выбор зон</a></li>
+                <li class="nav-item"><a href="booking.html">Управление бронированием</a></li>
+                <li class="nav-item"><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <label for="site-search">Поиск по сайту:</label>
+            <input type="search" id="site-search" name="q" aria-label="Search through site content">
+            <button>Поиск</button>
+        </div>
+    </header>
+    <section class="infographic">
+        <div class="circles">
+            <p>Выбрать дату</p>
+            <img src="..img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
+            <img src="..img/arrow.svg" class="arrow_img">
+            <p>Выбрать регион</p>
+            <img src="..img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
+            <img src="..img/arrow.svg" class="arrow_img">
+            <p class="text">Указать количество участников и сложность</p>
+            <img src="..img/ellipse.svg" class="ellipse"> 
+            &nbsp;&nbsp;&nbsp;
+            <img src="..img/arrow.svg" class="arrow_img">
+            <p>Оформить заказ</p>
+            <img src="..img/ellipse.svg" class="ellipse"> 
+        </div> 
+    </section>
+    <div class="information">
+        <h2>Наша цель: Сделать любой поход удобным, комфортным и безопасным</h2>
+        <h2>Наш девиз: Исполнить мечты просто </h2>
+    </div>
+    <div class="wrapper">
+        <h2>Отзывы клиентов</h2>
+        <div class="box-feedback">
+            <div>
+                <p class="feedback">Всё очень понравилось. По таймингу путь с привалами, экскурсиями в усадьбах и обедом распланирован на 10 из 10.</p>
+                <p class="name">Иван Иванов</p>
+            </div>
+            <div>
+                <p class="feedback">Все очень понравилось, отличные насыщенные впечатлениями выходные вышли - меняющийся пейзаж и северная красота вокруг.</p>
+                <p class="name">Елена Наумова</p>
+            </div>
+            <div>
+                <p class="feedback">Всё очень понравилось! В целом, всё очень здорово, очень хорошая поездка. Это одно из лучших событий в моей жизни</p>
+                <p class="name">Виктор Баринов</p>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <h2 class="main_page_title">Выбрать путешествие</h2>
+        <section class="main_page_filter">
+            <div class="main_page_filter_content">
+                <form id="main-page-hike-search-form" action="/route" method="get">
+                    <div>
+                        <div class="main_page_filter_col">
+                            <div class="main_page_filter">
+                                <label class="date">Сроки</label>
+                                <p class="label">с</p>
+                                <input type="date" id="hikesearch-date-from" class="styled hasDatepicker">
+                                <p class="label last">по</p>
+                                <input type="date" id="hikesearch-date-to" class="styled hasDatepicker">
+                            </div>
+                        </div>
+                        <div class="main_page_filter_col second_wid">
+                            <div class="main_page_filter_box_field inline">
+                                <div class="field-routesearch-direction">
+                                    <label>Регион</label>
+                                    <select id="routesearch-direction" class="styled">
+                                        <option value="3" data-select2-id="11">Сиродил</option>
+                                        <option value="4" data-select2-id="12">Моровинд</option>
+                                        <option value="5" data-select2-id="13">Скайрим</option>
+                                        <option value="6" data-select2-id="14">Хаммерфелл</option> 
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <label for="members">Количество участников:</label>
+                            <input type="number" id="members" name="members" min="1" max="25">
+                        </div>
+                        <div class="main_page_filter_col second_wid">
+                            <div class="main_page_filter_box_field">
+                                <div class="field-routesearch">
+                                    <label>Сложность</label>
+                                    <select id="routesearch-difficulty" class="styled select2-hidden-accessible" data-placeholder="Выберите..." data-multiple="true">
+                                        <option value="1">Для всех</option>
+                                        <option value="2">Легкий</option>
+                                        <option value="3">Средняя сложность</option>
+                                        <option value="4">Сложный</option>
+                                        <option value="5">Очень сложный(требуется специальная подготовка)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_page_filter_col third-wid">
+                            <button class="btn">Найти</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <h2 class="special_glav">Акции</h2>
+    <div class="special">
+        <div class="special-items item-one">
+            <img src="..img/snar.jpg">
+            <a>Скидка за свое снаряжение</a>
+            <div class="discription">
+                <p>Если вы берете в поход свою палатку, отвечающую требованиям похода, и готовы подселить в нее кого-нибудь из участников, то предоставляется скидка</p>
+            </div>
+            <button>Подробнее</button>
+        </div>
+        <div class="special-items item-two">
+            <img src="..img/card.jpg">
+            <a>Скидка по клубной карте</a>
+            <div class="discription">
+                <p>Клубную карту получают все участники походов продолжительностью более 5 дней, а также участники 5 походов выходного дня.</p>
+            </div>
+            <button>Подробнее</button>
+        </div>
+        <div class="special-items item-three">
+            <img src="..img/bron.jpg">
+            <a>Скидка за раннее бронирование</a>
+            <div class="discription">
+                <p>Собираетесь в поход заранее? Сэкономьте от 3 до 7% от стоимости путешествия!</p>
+            </div>
+            <button>Подробнее</button>
+        </div>
+    </div>
+    <div class="subsctiption">
+        <div class="container">
+            <div class="info">
+                <p class="header_p">Делимся лучшим</p>
+                <p class="text">Самые интереснык маршруты по Тамриэлю раз в неделю в вашем почтовом ящике</p>
+                <p class="text">Подпишись на нашу рассылку и получите чек-лист путешествий в подарок</p>
+            </div>
+            <form class="fields" id="subscribe_form"  name="email_form" target="_blank">
+                <div class="text_field_box">
+                    <input type="text" name="name" placeholder="Имя" class="text_field" required>
+                </div>
+                <div class="text_field_box">
+                    <input type="text" name="name" placeholder="Электронная почта" class="text_field" required>
+                </div>
+                <div class="button_field_box">
+                    <input value="Подписаться" type="submit" class="button button_field">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="tel">8 (800) 555-33-10</p>
+        <nav class="basement">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="seat.html">Выбор зон</a></li>
+                <li><a href="booking.html">Управление бронированием</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..css/main.css">
+    <link rel="stylesheet" href="..css/booking.css">
+</head>
+<body>
+    <header class="header">
+        <img src="..img/logo.svg">
+        <nav class="navigation">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html">Главная</a></li>
+                <li class="nav-item"><a href="seat.html">Выбор зон</a></li>
+                <li class="nav-item"><a href="booking.html">Управление бронированием</a></li>
+                <li class="nav-item"><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <label for="site-search">Поиск по сайту:</label>
+            <input type="search" id="site-search" name="q" aria-label="Search through site content">
+            <button>Поиск</button>
+        </div>
+    </header>
+    <div class="base">
+        <h2>Оформление бронирования</h2>
+    <div class="data">
+        <p>Выбор региона</p>
+        <select id="routesearch-direction" class="styled">
+            <option value="3" data-select2-id="11">Сиродил</option>
+            <option value="4" data-select2-id="12">Моровинд</option>
+            <option value="5" data-select2-id="13">Скайрим</option>
+            <option value="6" data-select2-id="14">Хаммерфелл</option> 
+        </select>
+        <p>Наименование маршрута</p>
+        <select class="name-n">
+            <option>Туда и обратно</option>
+            <option>Из Скайрима с любовью</option>
+            <option>Свободное королевство Хаммерфелл</option>
+        </select>
+        <p>Выбранные зоны</p>
+        <select>
+            <option>Имперский город</option>
+            <option>Анвил</option>
+        </select>
+        <p>Предполагаемая дата</p>
+        <input type="date" id="hikesearch-date-from" class="styled hasDatepicker">
+        <label for="kol">Количество человек</label>
+        <input type="number" id="kol" min="1" max="25"></input>
+    </div>
+    <div class="stoimiost">
+        <label for="value" class="stoimiost">Стоимость</label>
+        <input type="text" id="value">
+    </div>
+
+    <div class="add">
+        
+        <p for="provod"><input type="checkbox" id="provod">Услуги проводника</p>
+    
+        <p for="arenda"><input type="checkbox" id="arenda">Аренда туристического оборудования</p>
+        
+        <p for="photo"><input type="checkbox" id="photo">Услуги фотографа/видеооператора</p>
+        
+        <p for="ins"><input type="checkbox" id="ins">Страхование от несчастных случаев</p>
+    </div>
+    <div class="comm">
+        <label for="name">Коммантарий к заказу</label>
+        <input type="text" id="name" name="name" size="50">
+    </div>
+    <div class="text_field_box">
+        <input type="text" name="name" placeholder="Электронная почта" class="text_field" required>
+    </div>
+    <div class="itog">
+        <p></p>
+    </div>
+    <div class="btn-o">
+        <button type="button" class="buttonm">Оформить</button>
+    </div>
+
+    </div>
+    <footer>
+        <p class="tel">8 (800) 555-33-10</p>
+        <nav class="basement">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="seat.html">Выбор зон</a></li>
+                <li><a href="booking.html">Управление бронированием</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

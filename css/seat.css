@@ -1,0 +1,52 @@
+.marsh {
+    text-align: center;
+    background-color: #DEB887;
+}
+
+.marsh label {
+    font-size: 30px;
+}
+
+.marsh-one {
+    display: flex;
+    text-align: center;
+
+}
+
+.marsh-two {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.marsh-three {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.marsh-four {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+.btn-b{
+    text-align: center;
+    width: auto;
+    height: 100px;
+    padding: 60px;
+    background-color: #DEB887;
+}
+
+.btn-b button{
+    text-align: center;
+    width: auto;
+    height: 100px;
+    padding: 20px;
+}
+

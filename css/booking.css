@@ -1,0 +1,90 @@
+.data {
+    display: inline-flex;
+    margin: auto;
+    background-color: #DEB887;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.data select, input {
+
+}
+
+.data p {
+    font-size: 20px;
+    
+}
+
+.data label {
+    font-size: 20px;
+    position: relative;
+    top: 16px;
+}
+
+.data input{
+
+}
+
+.data option {
+    font-size: 40px;
+}
+
+.add {
+    padding: 100px;
+
+    background-color: #DEB887;
+    text-align: justify;
+    padding-bottom: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.add p {
+    margin: 0;
+    height: 30px;
+}
+.add input{
+    margin: 0;
+}
+
+
+.stoimiost{
+    margin: auto;
+    background-color: #DEB887;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+    font-size: 20px;
+
+
+
+}
+
+.buttonm {
+    background-color: #DEB887;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    left: 870px;
+    text-align: center;
+}
+
+.comm {
+    width: 100%;
+    height: 100px;
+    padding-top: 100px;
+    background-color: #DEB887;
+    text-align: center;
+    font-size: 20px;
+}
+
+.text_field_box{
+    text-align: center;
+    padding: 10px;
+}
